@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-style {
+    @apply rounded-lg text-white text-sm bg-slate-500 mb-1 py-1 px-2;
+  }
+}
