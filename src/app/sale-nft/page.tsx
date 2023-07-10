@@ -1,6 +1,6 @@
 "use client";
 
-import SaleNftCard from "@/components/SaleNftCard";
+import SaleNftCard from "@/components/saleNftCard";
 import { saleNftContract } from "@/lib/web3.config";
 import { NextPage } from "next";
 import { useEffect, useState } from "react";
