@@ -79,7 +79,7 @@ const SaleNftCard: FC<SaleNftCardProps> = ({ index, tokenId, getSaleNfts }) => {
         </span>
       )}
       {isMyNft ? (
-        <span className="ml-2">(내 다덴부)</span>
+        <span className="ml-2">(내 NFT)</span>
       ) : account ? (
         <button className="btn-style ml-2" onClick={onClickPurchase}>
           구매

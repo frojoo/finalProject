@@ -33,14 +33,23 @@ const Header: FC = () => {
     }
   };
 
+  const onClickLogOut = () => {
+    setAccount();
+  };
+
   return (
     <div className="py-4 pr-8 flex justify-end">
       {account ? (
         <div>
-          {account.substring(0, 4)}...{account.substring(account.length - 4)}
+          {account.substring(0, 4)}...{account.substring(account.length - 5)}
+          <button className="btn-style ml-2" onClick={onClickLogOut}>
+            로그아웃
+          </button>
         </div>
       ) : (
-        <button onClick={onClickLogIn}>지갑로그인</button>
+        <button className="btn-style" onClick={onClickLogIn}>
+          지갑로그인
+        </button>
       )}
     </div>
   );

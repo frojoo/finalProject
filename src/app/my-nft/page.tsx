@@ -50,7 +50,7 @@ const MyNft: NextPage = () => {
   const getMyNfts = async () => {
     try {
       const response: BigInt[] = await mintNftContract.methods
-        .getAllNft(account)
+        .getAllNFTs(account)
         .call();
 
       const tempArray = response.map((v) => {

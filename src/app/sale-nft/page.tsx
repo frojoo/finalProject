@@ -11,7 +11,7 @@ const SaleNft: NextPage = () => {
   const getSaleNfts = async () => {
     try {
       const response: bigint[] = await saleNftContract.methods
-        .getOnSaleNft()
+        .getOnSaleList()
         .call();
 
       const tempArray = response.map((v, i) => {

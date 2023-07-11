@@ -8,8 +8,8 @@ export const ethereum = MMSDK.getProvider();
 
 export const web3 = new Web3(ethereum);
 
-const MINT_NFT_ADDRESS = "0xE07675529794B77B193a42eb1375b6d8b4fAeA87";
-export const SALE_NFT_ADDRESS = "0xb1A0388ee5BbB33ED1Bc08fFB30E1Dd0E59192b8";
+const MINT_NFT_ADDRESS = "0xB19EE943c582d0bd63a6659dCF055C88fFcD1a30";
+export const SALE_NFT_ADDRESS = "0x3A724Eb35b65B6e4e73d778549dEC0bf4D693FeA";
 
 export const mintNftContract = new web3.eth.Contract(
   MINT_NFT_ABI,

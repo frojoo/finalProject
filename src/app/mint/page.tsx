@@ -17,12 +17,12 @@ const Mint: NextPage = () => {
   const onClickMint = async () => {
     try {
       const mintResponse = await mintNftContract.methods
-        .mintNft()
+        .mintNFT()
         .send({ from: account });
 
       if (Number(mintResponse.status) === 1) {
         const myNftResponse = await mintNftContract.methods
-          .getLatestNft(account)
+          .getLatestNFT(account)
           .call();
 
         setTokenId(Number(myNftResponse));
@@ -36,7 +36,7 @@ const Mint: NextPage = () => {
     try {
       const response = await mintNftContract.methods.balanceOf(account).call();
 
-      setBalance(1000 - Number(response));
+      setBalance(Number(response));
     } catch (error) {
       console.error(error);
     }
@@ -56,7 +56,7 @@ const Mint: NextPage = () => {
 
       {tokenId && <NftCard tokenId={tokenId} />}
 
-      <div>현재 남은 NFT 개수 : {balance} 개</div>
+      <div>민팅한 NFT 개수 : {balance}개</div>
     </div>
   );
 };
