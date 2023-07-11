@@ -42,7 +42,7 @@ const Mint: NextPage = () => {
 
   useEffect(() => {
     getBalanceOf();
-  }, [balance]);
+  }, [getBalanceOf]);
 
   return (
     <div className="flex flex-col items-start px-8 pt-5">
