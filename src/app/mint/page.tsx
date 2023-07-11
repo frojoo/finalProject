@@ -1,11 +1,9 @@
 "use client";
 
-import { INft, PINATA_URL, mintNftContract } from "@/lib/web3.config";
+import { mintNftContract } from "@/lib/web3.config";
 import { NextPage } from "next";
 import { useContext, useEffect, useState } from "react";
 import { AppContext } from "../layout";
-import axios from "axios";
-import Image from "next/image";
 import NftCard from "@/components/NftCard";
 
 const Mint: NextPage = () => {
