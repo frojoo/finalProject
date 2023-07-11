@@ -70,7 +70,7 @@ const MyNft: NextPage = () => {
 
     getSaleStatus();
     getMyNfts();
-  }, [account, getSaleStatus, getMyNfts]);
+  }, [account]);
 
   return (
     <div className="px-8 pt-5">
